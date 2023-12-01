@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+#inputSearch{
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 5vh;
+  margin-left: 20vw;
+  padding: 15px;
+
+}
+
+#logoimg{
+  margin-left: 54%;
+}
+
+#inputSearch::placeholder{
+  font-style: italic;
+  
+}
+
+.navbar{
+  display: flex;
+}
+
+#searchBtn{
+  height: 20px;
+  width: 50px;
+}
+
+#card>img{
+  height: 300px;
+  border-radius: 10px;
+
+}
+
+#card1{
+  border: 1px solid black;
+  width:400px;
+  height: 400px;
+  margin: auto;
+  background: linear-gradient(rgb(243, 154, 154),white);
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+#card1>img{
+  height: 300px;
+  margin-left: 13%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+#card1>h3{
+  text-align: center;
+  padding: 10px;
+}
+
+#card>p{
+  font-size: 25px;
+  margin-left: 45%;
+}
+
+#card1>p{
+  font-size: 25px;
+  margin-left: 25%;
+}
+
+#card1>button{
+  margin-top: -3%;
+}
+
+#card>h3{
+  padding: 10px;
+}
+
+body{
+  background: linear-gradient(darkslategray,white) no-repeat;
+  padding: 0px;
+  margin: 0px;
+  background-size: cover;
+  height: 100%;
+  font-family: serif;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#searchResults{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#searchLogo{
+  margin-left: 21%;
+}
+
+#highlandHarvest,#search{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#search{
+  padding: 40px;
+  display: none;
+}
+
+
+#highlandHarvest{
+  padding: 40px;
+
+}
+
+#context{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+.cook-btn{
+  background-color: black;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 38%;
+
+}
+#ingredients{
+  overflow: scroll;
+  position: fixed;
+  top: 1;
+  z-index: 10;
+  height:  75vh;
+}
+
+#card{
+  border: 1px solid black;
+  background: linear-gradient(lightyellow,white);
+  
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  box-shadow: 1px 1px black;
+  height: 350px;
+  width: 350px;
+  
+  
+}
+
+#card>img{
+  height: 250px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+#card>h3{
+  /* margin-left: 30%; */
+  text-align: center;
+}
+
+#card button{
+  /* text-align: center; */
+  align-items: center;
+}
+
+#howtocook img{
+  height:200px;
+  margin-left: 0%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+#ingredient{
+  font-size: 20px;
+  margin-top:2.5% ;
+  text-align: center;
+  
+}
+
+#process{
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+#howtocook{
+  width: 90%;
+  overflow: scroll;
+  background: linear-gradient(lavender,white);
+  text-align: center;
+  margin: auto;
+  
+}
+
+
+#ingredients::-webkit-scrollbar {
+  display: none;
+}
+
+
+#ingredients {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+#ingredients:hover::-webkit-scrollbar {
+  display: none;
+} 
+
+#Back{
+  margin-left: 0%;
+  width: 80px;
+  height: 30px;
+  background-color: lavenderblush;
+  border-radius: 10px;
+}
+
+.navbar img{
+  height:100px 
+}
+
+
+
+
+@media screen and (max-width:400px){
+  .navbar{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100vw;
+    
+    
+  } 
+  .navbar img{
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+#card,#card1{
+  border: 1px solid black;
+  background: linear-gradient(lightyellow,white);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 1px 1px black;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  
+  
+}
+#ingredients{
+  overflow: scroll;
+  position: fixed;
+  z-index: 10;
+  height:  70vh;
+}
+
+#card button{
+  margin-left: 0%; 
+}
+
+#card>img{
+  height: 60%;
+  margin-left: 0%; 
+  margin-top: 5%; 
+}
+
+#card>h3{
+  margin-left: 0%;
+} 
+#search{
+  margin: auto;
+}
+
+
+#card1>img{
+  height: 100px;
+  margin-left: 0%; 
+  border-radius: 10px;
+  margin-top: 5%;
+} 
+
+#card>p{
+  font-size: 15px;
+  margin-left: 0%;
+} 
+
+#card1>p{
+  font-size: 15px;
+  margin-left: 0%; 
+} 
+
+#card1>button{
+  margin-top: -3%;
+  margin-left: 0%; 
+  
+} 
+#random{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+#context{
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+#c1{
+   color: rgb(245, 193, 96);
+}
+
+#c2{
+  color: rgb(245, 193, 96);
+}
+
+#c3{
+  color: cyan;
+}
+
+#c4{
+  color: rgb(245, 193, 96);
+}
+
+#c5{
+  color: cyan;
+}
+
+#c6{
+  color: rgb(245, 193, 96);
+
+}
+
+#c7{
+  color: rgb(245, 193, 96);
+}
+
+#c8{
+  color: cyan;
+}
+
+#c9{
+  color: rgb(245, 193, 96);
+}
+
+#c10{
+   color: rgb(245, 193, 96);
+}
+
+#c11{
+  color: cyan;
+}
+
+#c12{
+  color: cyan;
+}
+
+#c13{
+  color: rgb(245, 193, 96);
+}
+
+#c14{
+  color: rgb(245, 193, 96);
+}
+
+#c15{
+  color: rgb(245, 193, 96);
+}
+
+#c16{
+  color: rgb(245, 193, 96);
+}
+
+#c17{
+  color: cyan;
+}
